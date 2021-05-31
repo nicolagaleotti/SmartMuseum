@@ -1,0 +1,63 @@
+﻿<Window x:Class="SmartMuseum.Galleria"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartMuseum"
+        mc:Ignorable="d"
+        Title="Galleria" Height="670" Width="1520" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="48"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="500"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Background="#333">
+                <Label Content="Smart Museum" FontSize="38" FontWeight="Bold" Foreground="Orange" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <Label Content="Clicca su un'opera per vedere la sua descrizione!" FontSize="30" FontWeight="Bold" Foreground="Orange" VerticalAlignment="Center" HorizontalAlignment="Center" Height="48"/>
+            </StackPanel>
+            <StackPanel Grid.Row="3">
+                <Grid Height="500">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="10"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Name="btnGioconda" BorderBrush="White" Click="btnGioconda_Click">
+                            <Image Source="gioconda.jpg" MaxWidth="290" MaxHeight="480"/>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Name="btnPrimavera" BorderBrush="White" Click="btnPrimavera_Click">
+                            <Image Source="primavera.jpg" MaxWidth="290" MaxHeight="480"/>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Name="btnIlBacio" BorderBrush="White" Click="btnIlBacio_Click">
+                            <Image Source="ilbacio.jpg" MaxWidth="290" MaxHeight="480"/>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Name="btnAlberoDellaVita" BorderBrush="White" Click="btnAlberoDellaVita_Click">
+                            <Image Source="alberodellavita.jpg" MaxWidth="290" MaxHeight="480"/>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Name="btnBaccoAdolescente" BorderBrush="White" Click="btnBaccoAdolescente_Click">
+                            <Image Source="bacco.jpg" MaxWidth="290" MaxHeight="480"/>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Window>
