@@ -14,11 +14,11 @@
                 <RowDefinition Height="20"/>
                 <RowDefinition Height="500"/>
             </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0" Background="#333">
-                <Label Content="Smart Museum" FontSize="38" FontWeight="Bold" Foreground="Orange" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60"/>
+            <StackPanel Grid.Row="0">
+                <Label Content="Smart museum" FontSize="40" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Segoe UI Semibold" ></Label>
             </StackPanel>
             <StackPanel Grid.Row="1">
-                <Label Content="Clicca su un'opera per vedere la sua descrizione!" FontSize="30" FontWeight="Bold" Foreground="Orange" VerticalAlignment="Center" HorizontalAlignment="Center" Height="48"/>
+                <Label FontSize="30" Content="Clicca su un'opera per vedere la sua descrizione!" FontFamily="Segoe UI Light" HorizontalAlignment="Center"  ></Label>
             </StackPanel>
             <StackPanel Grid.Row="3">
                 <Grid Height="500">
@@ -55,6 +55,21 @@
                         <Button Name="btnBaccoAdolescente" BorderBrush="White" Click="btnBaccoAdolescente_Click">
                             <Image Source="bacco.jpg" MaxWidth="290" MaxHeight="480"/>
                         </Button>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <Rectangle Width="300" Height="10" Fill="Red"></Rectangle>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2">
+                        <Rectangle Width="300" Height="10" Fill="Blue"></Rectangle>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3">
+                        <Rectangle Width="300" Height="10" Fill="Green"></Rectangle>
+                    </StackPanel>
+                    <StackPanel Grid.Column="4">
+                        <Rectangle Width="300" Height="10" Fill="Yellow"></Rectangle>
+                    </StackPanel>
+                    <StackPanel Grid.Column="5">
+                        <Rectangle Width="300" Height="10" Fill="Orange"></Rectangle>
                     </StackPanel>
                 </Grid>
             </StackPanel>

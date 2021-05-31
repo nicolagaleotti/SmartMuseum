@@ -5,21 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SmartMuseum"
         mc:Ignorable="d"
-        Title="Smart Museum" Height="400" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="Smart Museum" Height="400" Width="800"  ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <StackPanel>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="290"/>
             </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0" Background="#333">
-                <Label Content="Benvenuti a Smart Museum" Foreground="Orange" FontSize="40" FontWeight="Bold" Height="80" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <StackPanel Grid.Row="0" >
+                <Label Content="Smart Museum" FontSize="40" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Segoe UI Semibold" ></Label>
+            </StackPanel>
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <Label FontSize="20" Content="Acquista i biglietti e scopri le nostre opere" FontFamily="Segoe UI Light"  ></Label>
             </StackPanel>
             <StackPanel Grid.Row="1">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
+                        <ColumnDefinition Width="0.1*"></ColumnDefinition>
                         <ColumnDefinition/>
+
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="20"/>
@@ -27,17 +32,29 @@
                         <RowDefinition Height="150"/>
                         <RowDefinition Height="20"/>
                     </Grid.RowDefinitions>
+                    <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <Rectangle Width="400" Height="10" Fill="Blue"></Rectangle>
+                    </StackPanel>
                     <StackPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <TextBlock Text="Acquista un biglietto" FontSize="32" FontWeight="Bold" Foreground="#333"/>
+                        <TextBlock Text="Acquista un biglietto" FontSize="32" FontWeight="Bold" FontFamily="Segoe UI Semibold"/>
                     </StackPanel>
                     <StackPanel Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Button Content="Acquista" Name="btnAcquista" Width="200" Height="70" Background="Orange" Foreground="White" FontSize="32" FontWeight="Bold" Click="btnAcquista_Click"/>
+                        <Button Content="Acquista" Name="btnAcquista" Width="200" Height="40"  FontSize="20" Background="Blue" Foreground="White" FontFamily="Segoe UI Semibold" Click="btnAcquista_Click"/>
                     </StackPanel>
-                    <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <TextBlock Text="Visualizza galleria opere" FontSize="32" FontWeight="Bold" Foreground="#333"/>
+                    <StackPanel Grid.Column="0" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                        <Label Content="Verrai reindirizzato alla pagina di acquisto del biglietto" FontSize="15" FontFamily="Segoe UI"></Label>
                     </StackPanel>
-                    <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Button Content="Visualizza" Name="btnVisualizza" Width="200" Height="70" Background="Orange" Foreground="White" FontSize="32" FontWeight="Bold" Click="btnVisualizza_Click"/>
+                    <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                        <Label Content="Verrai reindirizzato alla home della galleria" FontSize="15" FontFamily="Segoe UI"></Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center">
+                        <Rectangle Width="400" Height="10" Fill="Red"></Rectangle>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock Text="Visualizza galleria opere" FontSize="32" FontWeight="Bold" FontFamily="Segoe UI Semibold"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button Name="btnVisualizza" Content="Visualizza" Width="200" Height="40"  FontSize="20" Background="Red" Foreground="White" FontFamily="Segoe UI Semibold" Click="btnVisualizza_Click"/>
                     </StackPanel>
                 </Grid>
             </StackPanel>

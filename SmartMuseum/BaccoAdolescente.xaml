@@ -15,7 +15,10 @@
                 <RowDefinition Height="540"/>
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="1">
-                <Label Content="Bacco adolescente [Caravaggio]" FontSize="38" FontWeight="Bold" Foreground="Orange" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60"/>
+                <Label Content="Bacco adolescente [Caravaggio]" FontSize="40" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Segoe UI Semibold" ></Label>
+            </StackPanel>
+            <StackPanel Grid.Row="2" VerticalAlignment="Bottom">
+                <Rectangle Width="1520" Height="10" Fill="Orange"></Rectangle>
             </StackPanel>
             <StackPanel Grid.Row="3">
                 <Grid Height="540">
@@ -29,7 +32,7 @@
                         <Image Source="bacco.jpg" MaxWidth="360" MaxHeight="500"/>
                     </StackPanel>
                     <StackPanel Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <TextBlock Name="lblBaccoAdolescente" FontSize="20" TextWrapping="Wrap" Width="1100"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <TextBlock Name="lblBaccoAdolescente" FontSize="20" TextWrapping="Wrap" Width="1100" FontFamily="Segoe UI Light"  HorizontalAlignment="Left" VerticalAlignment="Center"/>
                     </StackPanel>
                 </Grid>
             </StackPanel>
